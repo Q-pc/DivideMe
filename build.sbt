@@ -2,7 +2,7 @@ scalaVersion := "3.8.3"
 
 lazy val root = rootProject
   .settings(
-    name := "Scala",
+    name := "DivideMe",
     libraryDependencies ++= Seq(
       //You can add library dependencies here, for example,
       //"org.scalatest" %% "scalatest" % "3.2.19" % Test,
