@@ -1,30 +1,15 @@
 # DivideMe
-
-一个使用 Scala 3 和 sbt 构建的项目。
+*本项目仅供个人学习使用，禁止未经授权的二次分发、商业使用或修改后分发。*
 
 ## 项目简介
 
-DivideMe 是一个基于 Scala 3 的示例项目，演示了基本的 Scala 编程结构。
+DivideMe 是一个基于 Scala 3 的厨房模拟器项目
 
 ## 技术栈
 
 - **Scala**: 3.8.3
 - **构建工具**: sbt
 - **JDK**: 需要 JDK 21
-
-## 项目结构
-
-```
-DivideMe/
-├── build.sbt              # sbt 构建配置文件
-├── project/               # sbt 项目配置目录
-│   └── build.properties   # sbt 版本配置
-├── src/
-│   └── main/
-│       └── scala/
-│           └── main.scala # 主程序入口
-└── .gitignore             # Git 忽略规则
-```
 
 ## 快速开始
 
@@ -44,6 +29,9 @@ sbt run
 ```bash
 sbt compile
 ```
+## 贡献者
+1. [Qpc_](https://space.bilibili.com/3546590308469643) - *( 程序/部分美术 )*
+2. [一只不想起飞的呆呆龙](https://space.bilibili.com/3546618970245313) - *( 灵感来源/美术 )*
 
 ## 许可证
 
