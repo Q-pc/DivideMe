@@ -22,7 +22,7 @@ object App {
 
 class DivideMeApp extends SimpleApplication {
   private val logger = ColoredLog(getClass)
-  private var bulletAppState: BulletAppState = null
+  private var bulletAppState: BulletAppState = _
 
   override def simpleInitApp(): Unit = {
     logger.info("Initializing application...")
@@ -71,11 +71,9 @@ class DivideMeApp extends SimpleApplication {
       for (j <- 0 until size) {
         val x = i.toFloat / size.toFloat * 10f
         val z = j.toFloat / size.toFloat * 10f
-        heightmap(i * size + j) = (
-          Math.sin(x).toFloat * 2f +
-          Math.cos(z).toFloat * 2f +
-          Math.sin(x * 0.5f + z * 0.3f).toFloat * 4f
-        )
+        heightmap(i * size + j) = Math.sin(x).toFloat * 2f +
+        Math.cos(z).toFloat * 2f +
+        Math.sin(x * 0.5f + z * 0.3f).toFloat * 4f
       }
     }
     heightmap
