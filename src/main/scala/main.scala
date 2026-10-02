@@ -8,17 +8,9 @@ import com.jme3.scene.Geometry
 import com.jme3.scene.shape.Box
 import com.jme3.terrain.geomipmap.TerrainQuad
 
-import java.util.logging.LogManager
-
 @main
 def main(): Unit = {
   val logger = ColoredLog(App.getClass)
-  val stream = App.getClass.getResourceAsStream("/logging.properties")
-  if (stream != null) {
-    LogManager.getLogManager.readConfiguration(stream)
-    stream.close()
-  }
-
   logger.info("Starting DivideMe JME application...")
   val app = new DivideMeApp()
   app.start()
@@ -30,7 +22,7 @@ object App {
 
 class DivideMeApp extends SimpleApplication {
   private val logger = ColoredLog(getClass)
-  private var bulletAppState: BulletAppState = null
+  private var bulletAppState: BulletAppState = _
 
   override def simpleInitApp(): Unit = {
     logger.info("Initializing application...")
@@ -79,11 +71,9 @@ class DivideMeApp extends SimpleApplication {
       for (j <- 0 until size) {
         val x = i.toFloat / size.toFloat * 10f
         val z = j.toFloat / size.toFloat * 10f
-        heightmap(i * size + j) = (
-          Math.sin(x).toFloat * 2f +
-          Math.cos(z).toFloat * 2f +
-          Math.sin(x * 0.5f + z * 0.3f).toFloat * 4f
-        )
+        heightmap(i * size + j) = Math.sin(x).toFloat * 2f +
+        Math.cos(z).toFloat * 2f +
+        Math.sin(x * 0.5f + z * 0.3f).toFloat * 4f
       }
     }
     heightmap

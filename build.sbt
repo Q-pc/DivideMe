@@ -5,6 +5,7 @@ val jmeVersion = "3.6.1-stable"
 lazy val root = (project in file("."))
   .settings(
     name := "DivideMe",
+    fork := true,
     libraryDependencies ++= Seq(
       // JME Core
       "org.jmonkeyengine" % "jme3-core" % jmeVersion,
