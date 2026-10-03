@@ -2,6 +2,7 @@ package log
 
 import org.slf4j.{Logger, Marker}
 
+// 神秘bug（可运行）
 class ColoredLog(delegate: Logger) extends Logger {
   private val RED = "\u001B[31m"
   private val WHITE = "\u001B[37m"
