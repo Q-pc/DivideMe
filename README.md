@@ -23,8 +23,8 @@ sbt run
 sbt compile
 ```
 ## 贡献者
-1. [Qpc_](https://space.bilibili.com/3546590308469643) - *( 程序/部分美术 )*
-2. [一只不想起飞的呆呆龙](https://space.bilibili.com/3546618970245313) - *( 灵感来源/美术 )*
+- [Qpc_](https://space.bilibili.com/3546590308469643) - *( 程序/部分美术 )*
+- [一只不想起飞的呆呆龙](https://space.bilibili.com/3546618970245313) - *( 灵感来源/美术 )*
 
 ## 许可证
 

@@ -1,3 +1,5 @@
+package log
+
 import java.util.logging.*
 
 class DividedConsoleHandler extends Handler {
